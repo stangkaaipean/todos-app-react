@@ -1,13 +1,13 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import TodoList from './TodoList';
-import { setTodoDone, deleteTodo, addTodo, fetchTodos } from './actions/todoActions';
+import { setTodoDone, deleteTodo, addTodo, fetchTodos, changeFilter} from './actions/todoActions';
 import React from 'react';
+import { getVisibleTodos } from './reducers/todoSelectors';
 
 const mapStateToProps = state => ({
-    todos: state.todoReducer.todos
+    todos: getVisibleTodos(state)
   }); 
-
 
 class TodoListContainer extends React.Component {
 
@@ -26,6 +26,7 @@ const mapDispatchToProps = dispatch => bindActionCreators({
     deleteTodo,
     addTodo,
     fetchTodos,
+    changeFilter
   }, dispatch)
   
   

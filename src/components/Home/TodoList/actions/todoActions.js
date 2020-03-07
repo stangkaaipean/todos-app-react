@@ -116,3 +116,9 @@ export const setTodoDone = (todo, done) => dispatch => {
     .catch((error) => dispatch(setTodoDoneError(error)));
 }
 
+export const changeFilter = (visibilityFilter) => ({
+  type: types.CHANGE_FILTER,
+  payload: {
+    filter: visibilityFilter
+  }
+});

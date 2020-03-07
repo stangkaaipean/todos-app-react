@@ -13,3 +13,9 @@ export const DELETE_TODO_SUCCESS = 'DELETE_TODO_SUCCESS';
 export const SET_TODO_DONE_START = 'SET_TODO_DONE_START';
 export const SET_TODO_DONE_ERROR = 'SET_TODO_DONE_ERROR';
 export const SET_TODO_DONE_SUCCESS = 'SET_TODO_DONE_SUCCESS';
+
+export const FILTER_ALL = 'ALL';
+export const FILTER_DONE = 'DONE';
+export const FILTER_UNDONE = 'UNDONE';
+
+export const CHANGE_FILTER = 'CHANGE_FILTER'

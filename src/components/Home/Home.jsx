@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/images/logo.svg';
+import './assets/styles/Home.css';
+import TodoList from './TodoList/TodoListContainer';
+
 
 function App() {
   return (
@@ -10,6 +12,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <div>
+          <TodoList />
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"

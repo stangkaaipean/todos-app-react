@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './assets/styles/index.scss'
 
 
 class AddTodo extends Component {
@@ -32,12 +33,17 @@ class AddTodo extends Component {
     this.props.addTodo(this.state.task);
   }
 
+  handleKeyPress = (e) => {
+    if (e.key === 'Enter')
+      this.submitTask(e);
+  }
+
   render() {
     return (
-    <div>
-      <input type="text" onChange={this.changeTaskText} value={this.state.task} placeholder="Task text" />
-      <button onClick={this.submitTask}>Add Todo</button>
-    </div>
+      <div className="form-group row">
+        <input className="form-control dark-input" onKeyPress={this.handleKeyPress} type="text" onChange={this.changeTaskText} value={this.state.task} placeholder="Task text" />
+        <button onClick={this.submitTask}>Add Todo</button>
+      </div>
     );
   }
 }

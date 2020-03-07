@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './assets/styles/index.scss'
 
 
 const Todo = ({ todo, setDone, deleteTodo }) => (

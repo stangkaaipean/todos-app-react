@@ -6,7 +6,7 @@ import Home from '../Home/Home';
 import NotFound from '../NotFound/NotFound';
 
 // custom styles
-import './assets/styles/index.css';
+import './assets/styles/index.scss';
 
 
 // here would go some application default layout, if it exist

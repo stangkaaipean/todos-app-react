@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './assets/images/logo.svg';
-import './assets/styles/Home.css';
+import './assets/styles/index.scss';
 import TodoList from './TodoList/TodoListContainer';
 
 
@@ -9,20 +9,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div>
+        <div className="app-header">
+          <h2>ToDo App</h2>
+        </div>
+        <div className="main-content">
           <TodoList />
         </div>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );

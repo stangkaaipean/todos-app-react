@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Todo from './Todo/Todo';
 import AddTodo from './AddTodo/AddTodo';
 import FilterSelect from './FilterSelect';
+import './assets/styles/index.scss'
 
 
 const TodoList = ({ todos, setTodoDone, deleteTodo, addTodo, changeFilter}) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './assets/styles/not-found.css';
+import './assets/styles/index.css';
 
 
 const NotFound = () => (

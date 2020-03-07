@@ -4,16 +4,6 @@
       "id": 1,
       "task": "This is simple API test task",
       "done": false
-    },
-    {
-      "id": 2,
-      "task": "This is simple API test task 2",
-      "done": false
-    },
-    {
-      "id": 3,
-      "task": "This is simple API test task 3",
-      "done": true
     }
   ]
 }

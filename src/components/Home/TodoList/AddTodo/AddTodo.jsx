@@ -40,9 +40,9 @@ class AddTodo extends Component {
 
   render() {
     return (
-      <div className="form-group row">
-        <input className="form-control dark-input" onKeyPress={this.handleKeyPress} type="text" onChange={this.changeTaskText} value={this.state.task} placeholder="Task text" />
-        <button onClick={this.submitTask}>Add Todo</button>
+      <div className="form-group">
+        <input className="form-control dark-input form-item" onKeyPress={this.handleKeyPress} type="text" onChange={this.changeTaskText} value={this.state.task} placeholder="Task text" />
+        <button className="form-item btn btn-success" onClick={this.submitTask}>Add Todo</button>
       </div>
     );
   }

@@ -3,7 +3,12 @@
     {
       "id": 1,
       "task": "This is simple API test task",
-      "done": false
+      "done": true
+    },
+    {
+      "task": "Added some style to todo app",
+      "done": true,
+      "id": 3
     }
   ]
 }

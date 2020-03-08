@@ -4,10 +4,12 @@ import './assets/styles/index.scss'
 
 
 const Todo = ({ todo, setDone, deleteTodo }) => (
-  <li style={{ textDecoration: (todo.done ? "line-through" : "") }}>
-    {todo.task}&nbsp;
-    <button className="done-button" onClick={() => setDone(todo, !todo.done)}>{todo.done ? "Activate" : "Set Done"}</button>&nbsp;
-    <button className="delete-button" onClick={() => deleteTodo(todo.id)}>Delete</button>
+  <li>
+    <p style={{ textDecoration: (todo.done ? "line-through" : "") }}>{todo.task}&nbsp;</p>
+    <div>
+      <button className="done-button btn-primary" onClick={() => setDone(todo, !todo.done)}>{todo.done ? "Activate" : "Set Done"}</button>&nbsp;
+    <button className="delete-button btn-danger" onClick={() => deleteTodo(todo.id)}>Delete</button>
+    </div>
   </li>
 );
 

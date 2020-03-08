@@ -1,51 +1,11 @@
 @import '../../../../../common/styles/variables.scss';
 
-.todo-holder {
+li {
   display: flex;
-  flex-direction: row;
-
-  margin: 10px 0;
-
-  border: 1px dashed;
-  padding: 15px;
-
-  &.done {
-    background-color: $background-lighter;
-
-    .text {
-      text-decoration: line-through;
-    }
-  }
-
-  .text {
-    flex: 7;
+  align-items: baseline;
+  flex-wrap: wrap;
+  p {
+    flex: 300px;
     text-align: left;
-    margin: 0;
-
-    /* Center text verticaly */
-    display: flex;
-    align-items: center;
-  }
-
-  .buttons {
-    flex: 3;
-
-    delete-button {
-      border: none;
-      padding: 0;
-
-      cursor: pointer;
-    }
-
-    .done-button {
-      border: none;
-      padding: 0;
-
-      cursor: pointer;      
-    }
-
-    .control-image {
-      width: 24px;
-    }
   }
 }
